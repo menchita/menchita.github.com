@@ -1,0 +1,180 @@
+/*Paleta de colores
+#255
+#196
+#2
+*/
+/*selector por elemento*/
+html{
+    font-family: 'Merienda', cursive;
+    
+}
+/*selector por clase*/
+.container{
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.content{
+    background-color: rgb(243, 243, 105);
+    /* max-width: 1200px;
+    max-height: 800px;
+    width: 100%; */
+    height: 80vh;
+    width: 55vh;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16) ,0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    padding: 0.5em;
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.table{
+    width: 100%;
+}
+.table td, 
+.table th{
+    padding: 0.5em;
+    text-align: left;
+}
+.table tr:nth-child(even){
+    background-color: #ee5443;
+}
+td:nth-of-type(1){
+    font-size: 2 em;
+    color: red;
+
+}
+.fa-hand-rock{
+    color: rgb(65, 24, 24);
+}
+th{
+    display: none;
+}
+
+td{
+    display: block;
+    text-align: left;
+}
+
+}
+.center{
+    text-align: center;
+}
+.underline{
+    border-bottom: solid 2px #ee5443;
+    padding-bottom: 20px;
+}
+.position{
+    background-color: #ee5443;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16) ,0 3px 6px rgba(0,0,0,0.23);
+}
+/* .action{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+} */
+.action{
+    position: sticky;
+    top: 1em;
+    right: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close{
+    height: 50px;
+    width: 70px;
+    color: black;
+    background: #ee5443;
+    display: inline-block;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16) ,0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* a{
+    text-decoration: none;
+} */
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+.title-item{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+i:hover{
+    color: white;
+}
+
+.item-image{
+    display: none;
+}
+iframe{
+    width: 75vw;   
+}
+a:visited{
+    color:purple;
+}
+/* pseudoclases
+:hover | :visite | :active | :focus
+*/
+/* Unidades de medida en css*/
+/* Unidades fijas, estaticas o absolutas
+/* Pixeles px, centímetros cm, milímetros mm,picas pc, puntos pt
+
+/* Unidades de medida relativas
+/* porcentajes %, em, ex X, rem, vh (1%), vw (1%)
+
+/* Media querys*/
+
+/* @media (breakpoint) {propiedades*/
+
+    @media(min-width:600px){
+       th{
+           display: table-cell;
+       } 
+       td{
+           display: table-cell;
+       }
+       td:nth-of-type(1){
+        font-size: 1 em;
+        color: black;
+        }
+        .content{
+            width: 80vw;
+            height: 70vh;
+            padding: 1.8em;
+        }
+        .item-image{
+            display: inline-block;
+        }   
+        iframe{
+            height: 215px;
+            width: 250px;
+        } 
+        .inline{
+        display: inline-block;  
+        }
+        .action{
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        } 
+        .title-item{
+            font-size: 1.5em;
+            text-transform: uppercase;
+        }   
+
+
+    }
+
